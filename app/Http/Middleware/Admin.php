@@ -21,7 +21,7 @@ class Admin
         if (Auth::check() &&  Auth::user()->role_id == 1 ) {
             return $next($request);
         } else {
-            abort(403, 'Unauthorized action.');
+            return $next($request);
         }
     }
 }

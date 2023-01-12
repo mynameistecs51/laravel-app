@@ -3,7 +3,9 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
+use Illuminate\Routing\RedirectController;
 use Illuminate\Support\Facades\Auth;
+use Illuminate\Support\Facades\Redirect;
 
 class HomeController extends Controller
 {
@@ -27,6 +29,8 @@ class HomeController extends Controller
         if (Auth::user()->role_id == 1) {
             return view('layouts.blackend.admin.dashboard');
         }
-        return view('home');
+        // return view('home');
+        // return redirect()->route('public.index');
+        return view('layouts.frontend.master');
     }
 }

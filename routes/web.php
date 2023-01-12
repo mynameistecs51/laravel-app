@@ -5,7 +5,8 @@ use Illuminate\Support\Facades\Route;
 use Illuminate\Support\Facades\Auth;
 use App\Http\Controllers\HomeController;
 use App\Http\Controllers\admin\AdminController;
-use App\Http\Controllers\StudentController;
+use App\Http\Controllers\ManagementStudentController;
+use App\Http\Controllers\PublicController;
 use App\Models\Role;
 
 /*
@@ -30,7 +31,8 @@ Route::get('/', function () {
 
 //Route for normal student
 Route::group(['middleware' => ['auth']], function () {
-    Route::get('/home', [HomeController::class, 'index']);
+    // Route::get('/home', [HomeController::class, 'index']);
+    Route::get('/public', [PublicController::class, 'index']);
 });
 
 //Route for normal admin
@@ -40,7 +42,7 @@ Route::group(['middleware' => ['auth']], function () {
         Route::get('/home', [HomeController::class, 'index'])->name('home.index');
        
         //Student
-        Route::get('student', [StudentController::class, 'add'])->name('studentAdd');
-        Route::get('student/studentSkill', [StudentController::class, 'studentSkills'])->name('updateSkills');
+        Route::get('student', [ManagementStudentController::class, 'add'])->name('studentAdd');
+        Route::get('student/studentSkill', [ManagementStudentController::class, 'studentSkills'])->name('updateSkills');
     });
 // });
