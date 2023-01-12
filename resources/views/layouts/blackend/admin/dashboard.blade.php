@@ -1,4 +1,4 @@
-@extends('layouts.app')
+@extends('layouts.blackend.master')
 
 @section('content')
 <div class="container">

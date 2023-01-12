@@ -25,7 +25,7 @@ class HomeController extends Controller
     public function index()
     {
         if (Auth::user()->role_id == 1) {
-            return view('admin/dashboard');
+            return view('layouts.blackend.admin.dashboard');
         }
         return view('home');
     }
