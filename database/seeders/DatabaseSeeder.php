@@ -30,6 +30,13 @@ class DatabaseSeeder extends Seeder
             'role_id' => '1'
         ]);
 
+        $userStudent = User::create([
+            'name' => 'homsang',
+            'email' => 'homsang@local.com',
+            'password' => bcrypt('1qaz2wsx'),
+            'role_id' => '3'
+        ]);
+
         $adminRole = Role::create(['name' => "Admin" ]);
         $staffRole = Role::create(['name' => "Staff" ]);
         $studentRole = Role::create(['name' => "Student" ]);
