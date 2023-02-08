@@ -42,7 +42,7 @@
         </li>
         <li class="menu-item">
           <a href="{{ route('updateSkills')}}" class="menu-link">
-            <div data-i18n="Without navbar">อัพเดทสมรรถนะ</div>
+            <div data-i18n="อัพเดทสมรรถนะ">อัพเดทสมรรถนะ</div>
           </a>
         </li>
       </ul>
