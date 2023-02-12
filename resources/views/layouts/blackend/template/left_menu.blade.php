@@ -59,19 +59,38 @@
       <ul class="menu-sub">
         <li class="menu-item">
           <a href="pages-account-settings-account.html" class="menu-link">
-            <div data-i18n="Account">Account</div>
+            <div data-i18n="Account">สมรรถนะสาขาวิชา</div>
           </a>
         </li>
         <li class="menu-item">
           <a href="pages-account-settings-notifications.html" class="menu-link">
-            <div data-i18n="Notifications">Notifications</div>
+            <div data-i18n="Notifications">สมรรถนะหลัก</div>
           </a>
+        </li>
         </li>
         <li class="menu-item">
-          <a href="pages-account-settings-connections.html" class="menu-link">
-            <div data-i18n="Connections">Connections</div>
+          <a href="pages-account-settings-notifications.html" class="menu-link">
+            <div data-i18n="Notifications">สมรรถนะชั้นปีที่ 1</div>
           </a>
         </li>
+        </li>
+        <li class="menu-item">
+          <a href="pages-account-settings-notifications.html" class="menu-link">
+            <div data-i18n="Notifications">สมรรถนะชั้นปีที่ 2</div>
+          </a>
+        </li>
+        </li>
+        <li class="menu-item">
+          <a href="pages-account-settings-notifications.html" class="menu-link">
+            <div data-i18n="Notifications">สมรรถนะชั้นปีที่ 3</div>
+          </a>
+        </li>
+        </li>
+        <li class="menu-item">
+          <a href="pages-account-settings-notifications.html" class="menu-link">
+            <div data-i18n="Notifications">สมรรถนะชั้นปีที่ 4</div>
+          </a>
+        </li> 
       </ul>
     </li>
     {{-- <li class="menu-item">

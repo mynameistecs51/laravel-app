@@ -39,11 +39,11 @@ Route::group(['middleware' => ['auth']], function () {
 //Route for normal admin
 // Route::group(['prefix' => 'admin'], function () {
     Route::group(['middleware' => ['admin']], function () {
-        Route::get('/dashboard/index', [AdminController::class, 'index']);
+        Route::get('/dashboard/index', [AdminController::class, 'index'])->name('dashboard/index');
         Route::get('/home', [HomeController::class, 'index'])->name('home.index');
        
         //Student
         Route::get('/student', [ManagementStudentController::class, 'add'])->name('studentAdd');
         Route::get('/student/studentSkill', [ManagementStudentController::class, 'studentSkills'])->name('updateSkills');
     });
-// });
+//  });
